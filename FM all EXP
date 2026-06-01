@@ -1,0 +1,130 @@
+EXPERIMENT NO.1 
+Cash Flow Preparation in Excel 
+Objective : To understand how to enter and organize cashflows.
+Formula : No formula. 
+Data : 
+Procedure : 
+• Open Excel 
+• Enter Year & Cash Flow
+• Format table 
+Result : Data entered successfully 
+Conclusion :
+Yea
+r 0 
+1 
+2 
+3 
+4 
+5 
+Cashflow (₹)-5,00,000
+1,20,000
+1,50,000
+1,80,000
+2,00,000
+2,20,000 
+Cash flow structure understood 
+DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING, VTU BELAGAVI | PAGE 1 
+FINANCIAL MANAGEMENT LAB 
+
+
+EXPERIMENT NO.2
+Net Present Value (NPV) 
+Objective : To evaluate project using NPV 
+Formula : NPV = Present value of inflows – Initial investment 
+Excel Formula : =NPV(10%, B4:B8) + B3 
+Procedure : 
+• Enter the data 
+• Apply NPV formula 
+Result : NPV value obtained 
+Conclusion :
+If NPV > 0 → Accept 
+DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING, VTU BELAGAVI | PAGE 2 
+FINANCIAL MANAGEMENT LAB
+
+
+EXPERIMENT NO.3 
+Internal Rate of Return (IRR) 
+Objective: To calculate IRR 
+Formula : IRR = Rate at which NPV = 0 
+Excel Formula:
+Procedure : 
+=IRR(B3:B8) 
+• Enter full cash flow (including year 0)
+• Apply IRR formula 
+Result :
+IRR % obtained 
+Conclusion :
+PERIMENT NO.4 
+If IRR > required rate → Accept 
+DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING, VTU BELAGAVI | PAGE 3 
+FINANCIAL MANAGEMENT LAB
+
+
+EXPERIMENT NO.4
+Payback Period 
+OBJECTIVE: To calculate payback period
+Formula : Cumulative cash flow 
+Excel Formula : =SUM(D4:D8) 
+Procedure : 
+• Add cumulative column 
+• Find the Payback Check column using the formula:
+IF(C4<0,1,IF(C3<0,ABS(C3)/B4,0))
+IF(C5<0,1,IF(C4<0,ABS(C4)/B5,0))
+And so on for the remaining years
+• Then Apply PP Formula 
+Result :
+Payback year 
+for year 1
+for year 2 
+Conclusion:
+Shorter payback = less risk 
+DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING, VTU BELAGAVI | PAGE 4 
+FINANCIAL MANAGEMENT LAB 
+
+
+EXPERIMENT NO.5
+Discounted Payback Period 
+Objective: To consider time value of money
+Formula : Discounted CF = CF / (1+r)^t 
+Excel Formula: =B4/(1+10%)^A4 
+Procedure : 
+•
+•
+•
+• 
+Calculate discounted cash flows 
+Find cumulative discounted cash flow
+Find Discounted payback check 
+Find DPP 
+Result : Discounted payback period 
+Conclusion : More accurate than normal payback 
+DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING, VTU BELAGAVI | PAGE 5 
+FINANCIAL MANAGEMENT LAB 
+
+
+EXPERIMENT NO.6
+Profitability Index (PI) 
+Objective : To rank projects 
+Formula : PI = PV of inflows / Initial investment 
+Excel Formula : =NPV(10%, B4:B8)/ABS(B3) 
+Procedure : 
+• Calculate NPV 
+• Divide by investment 
+Result :
+PI value 
+Conclusion :
+If PI > 1 → Accept 
+DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING, VTU BELAGAVI | PAGE 6 
+FINANCIAL MANAGEMENT LAB 
+
+
+EXPERIMENT NO.7
+Sensitivity Analysis 
+Objective : To study effect of discount rate
+Data : Same cash flows 
+Excel Formula for Discounting Factor : =(B5/(1+0.1)^A5)
+Excel Formula for PV Factor @ 10% : =1/(1+0.1)^A5 
+Procedure : Calculate NPV at:
+o8% o 10% o 12% 
+Result : Different NPVs 
+Conclusion : Shows project sensitivity
